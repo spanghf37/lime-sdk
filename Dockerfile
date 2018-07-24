@@ -6,5 +6,9 @@ ADD . /app
 
 WORKDIR /app
 
+RUN git clone https://github.com/spanghf37/lime-sdk.git
+
+RUN ./cooker -c ar71xx/generic --profile=ubnt-unifiac-pro --flavor=lime_default --community=mesh
+
 ENTRYPOINT ["/app/cooker"]
 CMD ["--help"]
