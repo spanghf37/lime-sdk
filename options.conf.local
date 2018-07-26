@@ -1,5 +1,5 @@
 release=18.06.0-rc2
-base_url=https://downloads.openwrt.org/releases/$release/targets/
+base_url=https://downloads.openwrt.org/releases/$release/targets
 communities_git=https://github.com/spanghf37/network-profiles.git
 communities_dir=communities
 tmp_dir=tmp
