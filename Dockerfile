@@ -22,7 +22,7 @@ RUN cd openwrt && git clone https://github.com/cuihaoleo/lede-mr-mips target/lin
 
 #RUN cd openwrt && cp target/linux/mr-mips/misc/lede-config .config
 
-RUN cp .config /openwrt && cd openwrt && make defconfig && make && ls
+RUN cp .config /openwrt && cd openwrt && make oldconfig && make -j1 V=s && ls
 
 #RUN ./cooker -f
 
