@@ -20,7 +20,7 @@ RUN wget https://downloads.openwrt.org/releases/17.01.4/targets/ar71xx/generic/l
 
 RUN ./cooker -f
 
-RUN ./cooker -i ar71xx/generic --ib-file=openwrt-imagebuilder-18.06.1-ar71xx-generic.Linux-x86_64.tar.xz --sdk-file=openwrt-sdk-18.06.1-ar71xx-generic_gcc-7.3.0_musl.Linux-x86_64.tar.xz
+RUN ./cooker -i ar71xx/generic --ib-file=lede-imagebuilder-17.01.4-ar71xx-generic.Linux-x86_64.tar.xz --sdk-file=lede-sdk-17.01.4-ar71xx-generic_gcc-5.4.0_musl-1.1.16.Linux-x86_64.tar.xz
 
 RUN ./cooker -b ar71xx/generic --force-local
 
