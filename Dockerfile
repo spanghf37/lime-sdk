@@ -18,7 +18,7 @@ RUN ./cooker -i ar71xx/generic --ib-file=openwrt-imagebuilder-18.06.1-ar71xx-gen
 
 RUN ./cooker -b ar71xx/generic --force-local
 
-RUN ./cooker -c ar71xx/generic --profile=ubnt-unifiac-pro --flavor=lime_default --community=mesh/generic --force-local
+RUN ./cooker -c ar71xx/generic --profile=ubnt-unifiac-pro --flavor=lime_mini --community=mesh/generic --force-local
 
 ENTRYPOINT ["/app/cooker"]
 
