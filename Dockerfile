@@ -10,6 +10,8 @@ RUN git clone https://git.openwrt.org/openwrt/openwrt.git
 
 RUN cd openwrt && git pull
 
+RUN cd openwrt && git clone https://github.com/cuihaoleo/lede-mr-mips target/linux/mr-mips
+
 RUN git clone https://github.com/spanghf37/lime-sdk.git
 
 RUN wget https://downloads.openwrt.org/releases/18.06.1/targets/ar71xx/generic/openwrt-imagebuilder-18.06.1-ar71xx-generic.Linux-x86_64.tar.xz
