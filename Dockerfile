@@ -22,7 +22,7 @@ RUN wget https://downloads.openwrt.org/releases/17.01.4/targets/ar71xx/generic/l
 
 #RUN cd openwrt && cp target/linux/mr-mips/misc/lede-config .config
 
-RUN cp config-metarouter /openwrt/.config && cd openwrt && make oldconfig
+RUN cp .config /openwrt && cd openwrt && make oldconfig
 
 RUN ./cooker -f
 
