@@ -18,6 +18,8 @@ RUN wget https://downloads.openwrt.org/releases/17.01.4/targets/ar71xx/generic/l
 
 RUN wget https://downloads.openwrt.org/releases/17.01.4/targets/ar71xx/generic/lede-sdk-17.01.4-ar71xx-generic_gcc-5.4.0_musl-1.1.16.Linux-x86_64.tar.xz
 
+RUN cd openwrt && make defconfig && cat .config
+
 RUN cd openwrt && cp target/linux/mr-mips/misc/lede-config .config
 
 RUN cd openwrt && make oldconfig
