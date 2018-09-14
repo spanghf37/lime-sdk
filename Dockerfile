@@ -6,8 +6,6 @@ RUN useradd -ms /bin/bash builder
 
 USER builder
 
-ADD /home builder
-
 WORKDIR /home/builder
 
 RUN git clone https://git.openwrt.org/openwrt/openwrt.git
