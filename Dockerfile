@@ -22,11 +22,7 @@ RUN git clone https://github.com/spanghf37/lime-sdk.git
 
 #RUN cd openwrt && cp target/linux/mr-mips/misc/lede-config .config
 
-RUN cp lime-sdk/groove.sh openwrt
-
-USER root
-
-RUN cd openwrt && ./groove.sh
+RUN cp lime-sdk/groove.sh openwrt && chmod +x groove.sh && cd openwrt && ./groove.sh
 
 USER builder
 
