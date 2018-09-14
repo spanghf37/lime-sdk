@@ -24,7 +24,7 @@ RUN cd openwrt && git clone https://github.com/cuihaoleo/lede-mr-mips target/lin
 
 #RUN cd openwrt && cp target/linux/mr-mips/misc/lede-config .config
 
-RUN cp .config /openwrt && cd openwrt && make defconfig && make -j1 V=s && ls
+RUN cp .config openwrt && cd openwrt && make defconfig && make -j1 V=s && ls
 
 #RUN ./cooker -f
 
@@ -34,6 +34,6 @@ RUN cp .config /openwrt && cd openwrt && make defconfig && make -j1 V=s && ls
 
 #RUN ./cooker -c ar71xx/generic --profile=ubnt-unifiac-pro --flavor=lime_mini --community=mesh/generic --force-local
 
-ENTRYPOINT ["/app/cooker"]
+ENTRYPOINT ["/home/builder/cooker"]
 
 CMD ["--help"]
