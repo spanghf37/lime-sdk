@@ -1,11 +1,9 @@
-diff --git
+git diff
 a/target/linux/ar71xx/files/arch/mips/ath79/mach-rb91x.c
 b/target/linux/ar71xx/files/arch/mips/ath79/mach-rb91x.c
 index 75382be..0fd03ff 100644
---- a/target/linux/ar71xx/files/arch/mips/ath79/machrb91x.
-c
-+++ b/target/linux/ar71xx/files/arch/mips/ath79/machrb91x.
-c
+--- a/target/linux/ar71xx/files/arch/mips/ath79/machrb91x.c
++++ b/target/linux/ar71xx/files/arch/mips/ath79/machrb91x.c
 @@ -41,14 +42,6 @@
 #include "pci.h"
 #include "routerboot.h"
