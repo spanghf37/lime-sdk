@@ -14,7 +14,7 @@ RUN cd openwrt && git pull
 
 RUN cd openwrt && git clone https://github.com/cuihaoleo/lede-mr-mips target/linux/mr-mips
 
-#RUN git clone https://github.com/spanghf37/lime-sdk.git
+RUN git clone https://github.com/spanghf37/lime-sdk.git
 
 #RUN wget https://downloads.openwrt.org/releases/17.01.4/targets/ar71xx/generic/lede-imagebuilder-17.01.4-ar71xx-generic.Linux-x86_64.tar.xz
 
