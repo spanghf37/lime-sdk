@@ -6,6 +6,8 @@ RUN useradd -ms /bin/bash builder
 
 USER builder
 
+RUN ls
+
 ADD /home /home/builder/app
 
 WORKDIR /home/builder/app
