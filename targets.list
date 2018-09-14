@@ -1,4 +1,5 @@
 ar71xx/generic
+ar71xx/mikrotik
 ramips/rt305x
 ramips/rt3883
 ramips/mt7620
