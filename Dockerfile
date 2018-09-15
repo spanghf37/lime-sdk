@@ -26,7 +26,7 @@ RUN cd openwrt && git checkout remotes/origin/lede-17.01 && rm target/linux/ar71
 
 RUN cd openwrt/target/linux/ar71xx/files/arch/mips/ath79 && wget https://raw.githubusercontent.com/spanghf37/openwrt/master/target/linux/ar71xx/files/arch/mips/ath79/machtypes.h && wget https://raw.githubusercontent.com/spanghf37/openwrt/master/target/linux/ar71xx/files/arch/mips/ath79/mach-rb91x.c
 
-RUN cd openwrt && wget https://raw.githubusercontent.com/spanghf37/lime-sdk/master/.config && make
+RUN cd openwrt && wget https://raw.githubusercontent.com/spanghf37/lime-sdk/master/.config && make download && make
 
 #RUN ls && cp lime-sdk/.config openwrt && cd openwrt && make defconfig && make && ls
 
