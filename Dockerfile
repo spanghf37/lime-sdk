@@ -18,7 +18,7 @@ RUN cd openwrt && cp feeds.conf.default feeds.conf && echo "src-git libremesh ht
 
 RUN cd openwrt && scripts/feeds update -a && scripts/feeds install -a
 
-RUN cd openwrt && wget https://raw.githubusercontent.com/spanghf37/lime-sdk/master/.config && make -j1 V=s
+RUN cd openwrt && wget https://raw.githubusercontent.com/spanghf37/lime-sdk/master/.config && make
 
 ENTRYPOINT ["/home/builder/cooker"]
 
